@@ -1,0 +1,18 @@
+sequenceDiagram
+    title New note in Single page app diagram
+    participant browser
+    participant server
+
+    browser->>browser: document.getElementById('notes_form')
+    Note right of browser: Register event handler for submit event
+    browser->>browser: e.preventDefault()
+    Note right of browser: Prevent default form submission
+    browser->>browser: notes.push(note)
+    Note right of browser: Add new note to notes list & re-render note list on page
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    activate server
+    Note right of browser: Send new note with data type as JSON
+    server-->>browser: HTTP Status Code 201
+    deactivate server
+    Note left of server: Status code for request succesful & resource created
