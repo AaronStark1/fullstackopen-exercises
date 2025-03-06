@@ -141,13 +141,22 @@ const App = () => {
     personService
       .create(personObject)
       .then(returnedPerson =>{
-      setPersons(persons.concat(returnedPerson))
-      setErrorMessage(`Added ${returnedPerson.name}`)
-      setTimeout(() => {
-        setErrorMessage(null)
-      }, 5000)
-      setNewName("")
-      setNewNumber("")
+        setPersons(persons.concat(returnedPerson))
+        setErrorMessage(`Added ${returnedPerson.name}`)
+        setTimeout(() => {
+          setErrorMessage(null)
+        }, 5000)
+        setNewName("")
+        setNewNumber("")
+      })
+      .catch(error => {
+        console.log(error.response.data.error);
+        setIsError(true)
+        setErrorMessage(error.response.data.error)
+        setTimeout(() => {
+          setErrorMessage(null)
+          setIsError(false)
+        }, 5000)
       })
     }
   }
