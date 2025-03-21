@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { useEffect, useState } from 'react'
 import personService from './services/persons.js'
 import Notifications from './Notifications.jsx'
@@ -117,7 +116,7 @@ const App = () => {
           setNewName('')
           setNewNumber('')
         })
-        .catch(error => {
+        .catch(() => {
           setErrorMessage(
             `Information of '${newName}' has already been removed from server`
           )
