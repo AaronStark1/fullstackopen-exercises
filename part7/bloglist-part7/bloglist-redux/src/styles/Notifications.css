@@ -1,0 +1,33 @@
+.notification-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1050;
+    max-width: 420px;
+    width: 100%;
+  }
+  
+  .custom-alert {
+    border-radius: 14px;
+    padding: 16px 20px;
+    font-size: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    background-color: #1e1e1e !important;
+    color: #fefefe;
+    border: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .custom-alert.alert-success {
+    background: linear-gradient(135deg, #2e7d32, #66bb6a) !important;
+  }
+  
+  .custom-alert.alert-danger {
+    background: linear-gradient(135deg, #c62828, #ef5350) !important;
+  }
+  
+  .alert-icon {
+    font-size: 1.2rem;
+  }
+  
