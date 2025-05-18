@@ -12,16 +12,17 @@ blogsRouter.get('/', async (request, response) => {
 })
 
 
-blogsRouter.post('/', middleware.userExtractor,async (request, response, next) => {
+blogsRouter.post('/', middleware.userExtractor, async (request, response, next) => {
   const { title, author, url, likes } = request.body
   const user = request.user
+
   try {
     const blog = new Blog({
       title,
       author,
       url,
-      likes,
-      user: user._id // Assign the creator's ID to the blog
+      likes: likes || 0,  // Default likes to 0 if not provided
+      user: user._id  // Store only the user ID
     })
 
     const savedBlog = await blog.save()
@@ -30,11 +31,15 @@ blogsRouter.post('/', middleware.userExtractor,async (request, response, next) =
     user.blogs.push(savedBlog._id)
     await user.save()
 
-    response.status(201).json(savedBlog)
+    //  Fetch the blog again with user details populated
+    const populatedBlog = await Blog.findById(savedBlog._id).populate('user', { username: 1, name: 1 })
+
+    response.status(201).json(populatedBlog)  //  Send back the populated blog
   } catch (error) {
     next(error)
   }
 })
+
 
   blogsRouter.put('/:id', async (request, response, next) => {
     const { likes } = request.body
@@ -45,7 +50,8 @@ blogsRouter.post('/', middleware.userExtractor,async (request, response, next) =
         { likes },
         { new: true, runValidators: true, context: 'query' }
       )
-      response.json(updatedBlog)
+      const populatedBlog = await Blog.findById(updatedBlog._id).populate('user', {username: 1, name: 1})
+      response.json(populatedBlog)
     } catch (error) {
       next(error)
     }
