@@ -35,6 +35,7 @@ This repository contains my solutions for exercises from the [Full Stack Open](h
 [![Node.js](https://skillicons.dev/icons?i=nodejs)](https://nodejs.org/)
 [![Express](https://skillicons.dev/icons?i=express)](https://expressjs.com/)
 [![TypeScript](https://skillicons.dev/icons?i=ts)](https://www.typescriptlang.org/)
+[![Bootstrap](https://skillicons.dev/icons?i=bootstrap)](https://getbootstrap.com/)
 
 [![Redux](https://skillicons.dev/icons?i=redux)](https://redux.js.org/)
 [![React](https://skillicons.dev/icons?i=react)](https://react.dev/)
@@ -43,7 +44,8 @@ This repository contains my solutions for exercises from the [Full Stack Open](h
 [![Babel](https://skillicons.dev/icons?i=babel)](https://babeljs.io/)
 [![Bash](https://skillicons.dev/icons?i=bash)](https://www.gnu.org/software/bash/)
 [![Postman](https://skillicons.dev/icons?i=postman)](https://www.postman.com/product/what-is-postman/)
-
+[![Vite](https://skillicons.dev/icons?i=vite)](https://vitejs.dev/)
+[![npm](https://skillicons.dev/icons?i=npm)](https://www.npmjs.com/)
 ## Course Material📖
 
 ### Part 0: Fundamentals of Web apps
