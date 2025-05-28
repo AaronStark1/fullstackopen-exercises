@@ -35,7 +35,11 @@ This repository contains my solutions for exercises from the [Full Stack Open](h
 [![Node.js](https://skillicons.dev/icons?i=nodejs)](https://nodejs.org/)
 [![Express](https://skillicons.dev/icons?i=express)](https://expressjs.com/)
 [![TypeScript](https://skillicons.dev/icons?i=ts)](https://www.typescriptlang.org/)
-[![Bootstrap](https://skillicons.dev/icons?i=bootstrap)](https://getbootstrap.com/)
+[![Bootstrap](https://skills.syvixor.com/api/icons?i=bootstrap)](https://getbootstrap.com/)
+[![Axios](https://skills.syvixor.com/api/icons?i=axios)](https://axios-http.com/)
+[![ESLint](https://skills.syvixor.com/api/icons?i=eslint)](https://eslint.org/)
+[![JSON](https://skills.syvixor.com/api/icons?i=json)](https://www.json.org/)
+[![JWT](https://skills.syvixor.com/api/icons?i=jwt)](https://jwt.io/)
 
 [![Redux](https://skillicons.dev/icons?i=redux)](https://redux.js.org/)
 [![React](https://skillicons.dev/icons?i=react)](https://react.dev/)
@@ -46,6 +50,11 @@ This repository contains my solutions for exercises from the [Full Stack Open](h
 [![Postman](https://skillicons.dev/icons?i=postman)](https://www.postman.com/product/what-is-postman/)
 [![Vite](https://skillicons.dev/icons?i=vite)](https://vitejs.dev/)
 [![npm](https://skillicons.dev/icons?i=npm)](https://www.npmjs.com/)
+[![Playwright](https://skills.syvixor.com/api/icons?i=playwright)](https://playwright.dev/)
+[![Prettier](https://skills.syvixor.com/api/icons?i=prettier)](https://prettier.io/)
+[![Vitest](https://skills.syvixor.com/api/icons?i=vitest)](https://vitest.dev/)
+[![Render](https://skills.syvixor.com/api/icons?i=render)](https://render.com/)
+
 ## Course Material📖
 
 ### Part 0: Fundamentals of Web apps
